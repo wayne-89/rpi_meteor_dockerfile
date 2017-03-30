@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 NODE_VERSION=4.4.7
-NODE_ARCH=x64
+NODE_ARCH=armv7l
 
 # check we need to do this or not
 
