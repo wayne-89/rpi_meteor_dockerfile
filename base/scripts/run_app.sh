@@ -5,7 +5,8 @@ if [ -d /bundle ]; then
   tar xzf *.tar.gz
   cd /bundle/bundle/programs/server/
   ln -sf /web_statics/.upload/ .upload
-  npm i
+  sudo npm i
+  sudo npm install fibers
   cd /bundle/bundle/
 elif [[ $BUNDLE_URL ]]; then
   cd /tmp
@@ -42,4 +43,4 @@ fi
 export PORT=${PORT:-80}
 
 echo "=> Starting meteor app on port:$PORT"
-node main.js
+sudo node main.js
